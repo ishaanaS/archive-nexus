@@ -1,3 +1,95 @@
 a{
     text-decoration: none;
 }
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: Georgia, serif;
+}
+
+.container {
+    width: 1186px;
+    height: 1486px;
+    position: relative;
+    background: white;
+}
+
+.background-image {
+    width: 1268px;
+    height: 1268px;
+    position: absolute;
+    left: 145px;
+    top: 272px;
+}
+
+.content {
+    height: 325px;
+    position: absolute;
+    left: 60px;
+    top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 77px;
+}
+
+.nav {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-item {
+    width: 133px;
+    height: 48px;
+    color: #DFAAAE;
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.welcome-text {
+    width: 431px;
+    height: 200px;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.black-star {
+    width: 94px;
+    height: 94px;
+    position: absolute;
+    right: -300px;
+    top: 1420px;
+}
+
+.title {
+    width: 1338px;
+    height: 290px;
+    position: absolute;
+    left: -46px;
+    top: 490px;
+    color: black;
+    font-size: 200px;
+    font-family: DotGothic16, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-wrap: normal;
+}
