@@ -4,8 +4,8 @@ a{
 
 .star{
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 90px;
+    height: 90px;
     right: -300px;
     top: 1420px;
     object-fit: contain;
