@@ -3,10 +3,10 @@ a{
 }
 
 .star{
-    position: absolute;
+    position: fixed;
     width: 90px;
     height: 90px;
-    right: -300px;
-    top: 1420px;
+    bottom: 5vh; 
+    right: 5vw;
     object-fit: contain;
 }    
