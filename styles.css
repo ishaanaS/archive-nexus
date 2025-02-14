@@ -3,9 +3,9 @@ a{
 }
 
 .star{
-    position: fixed;
-    width: 90px;
-    height: 90px;
+    position: absolute;
+    width: 95px;
+    height: 95px;
     bottom: 5vh; 
     right: 5vw;
     object-fit: contain;
