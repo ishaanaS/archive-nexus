@@ -6,7 +6,7 @@ a{
     position: absolute;
     width: 95px;
     height: 95px;
-    bottom: 5vh; 
-    right: 5vw;
+    bottom: 0%; 
+    right: 0%;
     object-fit: contain;
 }    
