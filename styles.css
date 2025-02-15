@@ -10,3 +10,18 @@ a{
     right: 0%;
     object-fit: contain;
 }     
+
+.title{
+    position: absolute;
+    font-family: DotGothic16;
+    text-transform: uppercase;
+    word-wrap: normal;
+    font-weight: 400;
+    font-size: 200px;
+    width: 1338px;
+    height: 290px;
+    left: -46px;
+    top: 490px;
+    color: black;
+}
+        
