@@ -1,5 +1,22 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-x: hidden; /* Stops horizontal scrolling */
+    width: 100%; /* Ensures no extra width issues */
+    height: 100%;
+}
+
+body{ 
+    overflow-y: auto;
+
+}
 a{
     text-decoration: none;
+}
+
+p{
+    align-items: center;
 }
 
 .star{
@@ -12,16 +29,59 @@ a{
 }     
 
 .title{
-    position: absolute;
+    position: fixed;
     font-family: DotGothic16;
     text-transform: uppercase;
     word-wrap: normal;
     font-weight: 400;
-    font-size: 200px;
-    width: 1338px;
-    height: 290px;
-    left: -46px;
-    top: 490px;
+    font-size: 12rem;
+    left: -2%;
+    top: 450px;
     color: black;
 }
-        
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    
+}
+
+.nav-left {
+    display: flex;
+    gap: 70px; /* Spacing between "about" and "browse" */
+    flex: 1;
+}
+
+.nav-right {
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+    
+    
+}
+
+
+.nav-item {
+    color: #DFAAAE;
+    font-size: 20px;
+    font-weight: 400;
+}
+.intro {
+    word-break: break-word;
+    margin-top: 2rem; /* Adjust spacing below navbar */
+    font-size: 16px; 
+    font-family: Georgia; 
+    font-weight: 400;
+    padding-left: 60px; 
+    padding-right: 60px;
+    padding-top: 5rem;
+    
+}
+
+
