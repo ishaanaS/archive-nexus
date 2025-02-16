@@ -1,19 +1,29 @@
+*{
+    pointer-events: auto;
+    
+}
+
 body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-x: hidden; /* Stops horizontal scrolling */
-    width: 100%; /* Ensures no extra width issues */
+    overflow-y: auto;
+    width: 100%; 
     height: 100%;
 }
 
-body{ 
-    overflow-y: auto;
-
-}
 a{
     text-decoration: none;
+    
 }
+
+a:visited {
+    color: #DFAAAE; 
+  }
+
+a:active {
+    color: black; 
+  }
 
 p{
     align-items: center;
@@ -21,6 +31,7 @@ p{
 
 .star{
     position: absolute;
+    pointer-events: none;
     width: 95px;
     height: 95px;
     bottom: 0%; 
@@ -30,6 +41,7 @@ p{
 
 .title{
     position: fixed;
+    pointer-events: none;
     font-family: DotGothic16;
     text-transform: uppercase;
     word-wrap: normal;
@@ -54,7 +66,7 @@ p{
 
 .nav-left {
     display: flex;
-    gap: 70px; /* Spacing between "about" and "browse" */
+    gap: 70px; 
     flex: 1;
 }
 
@@ -63,18 +75,20 @@ p{
     margin-left: auto;
     justify-content: flex-end;
     
-    
 }
-
 
 .nav-item {
     color: #DFAAAE;
     font-size: 20px;
     font-weight: 400;
+    cursor: pointer;
+    
+    
 }
+
 .intro {
     word-break: break-word;
-    margin-top: 2rem; /* Adjust spacing below navbar */
+    margin-top: 2rem; 
     font-size: 16px; 
     font-family: Georgia; 
     font-weight: 400;
@@ -83,5 +97,91 @@ p{
     padding-top: 5rem;
     
 }
+h3{
+    font-family: DotGothic16;
+    padding-top: 10px;
+}
+/* Full-screen modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
 
+/* Active modal - fades in smoothly */
+.modal.show {
+    display: flex;
+    opacity: 1;
+}
 
+/* Fullscreen modal content */
+.modal-content {
+    background: #DFAAAE;
+    width: 100vw; 
+    height: 100vh; 
+    max-width: none; /* covers full screen */
+    max-height: none; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    font-family: Georgia; 
+    font-size: 16px;
+    text-align: left;
+    color: black;
+    padding: 40px;
+    position: relative;
+    transform: translateY(-50px); /* Start slightly above */
+    transition: transform 0.4s ease-in-out;
+}
+
+/* When modal is shown, smoothly slide in */
+.modal.show .modal-content {
+    transform: translateY(0);
+}
+
+/* Close button - Move it lower */
+.close-btn {
+    position: absolute;
+    top: 40px;  /* Adjusted lower */
+    right: 20px; /* Keep it aligned to the right */
+    font-size: 35px; /* Slightly bigger for better visibility */
+    cursor: pointer;
+    color: #000000;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+  
+.squiggle {
+    position: relative;
+    display: inline-block; /* defined boundary ke liye */
+  }
+  
+  .squiggle::before {
+    content: '';
+    position: absolute;
+    top: -28px; 
+    left: -28px; 
+    right: -28px; 
+    bottom: -28px; 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M52,3 L57,30 L92,30 L65,48 L79,79 L50,55 L25,80 L37,50 L10,30 L40,30 Z' fill='none' stroke='black' stroke-width='0.5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    pointer-events: none; /* for button clicks */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .squiggle:hover::before {
+    opacity: 1;
+  }
+  

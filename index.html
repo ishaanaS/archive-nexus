@@ -8,19 +8,47 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+       
     </head>
     <body>
         <div style="width: 1186px; height: 1486px; position: relative; background: white">
             <img style="width: 1268px; height: 1268px; left: 145px; top: 272px; position: absolute" src="5.png"/>
-            <header class="navbar">
-                <div class="nav-left">
-                    <div class="nav-item">about</div>
-                    <div class="nav-item"><a href="page1.html">browse</a></div>
-                </div>
-                <div class="nav-right">
-                    <div class="nav-item">contact</div>
-                </div>
-            </header>
+        <header class="navbar">
+            <div class="nav-left">
+                <div class="nav-item squiggle" id="about-btn">about</div>
+                <div class="nav-item squiggle"><a href="page1.html">browse</a></div>
+        </div>
+            <div class="nav-right">
+                <div class="nav-item squiggle">contact</div>
+            </div>
+        </header>
+            <!-- Pop-up Modal -->
+<div id="about-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3>about us</h3>
+        <p>Archive Nexus is a digital library dedicated to preserving and providing universal access<br> to historical and cultural artifacts in digital form. Our mission is to uncover and safeguard<br>the whispers of history, bridging the past and present for scholars, students, and curious minds alike.
+   <br>Founded in 2025, Archive Nexus began by focusing on rare manuscripts and forgotten texts.<br>Today, our collection has expanded to include:
+    <ul><li>1 million digitized books and texts</li>
+     <li>700,000 audio recordings</li>
+     <li>300,000 video files</li>
+     <li>50,000 images</li>
+     <li>8,000 software programs</li>
+    </ul>
+We work with a network of libraries, museums, and academic institutions worldwide to identify<br>and digitize important historical materials. Our commitment to universal access means that anyone<br>with an internet connection can explore our vast collection for free.
+<br>
+<br>Our platform features curated special collections focusing on various themes, time periods, and cultures.<br>These collections provide context and depth to our archive, making it easier for researchers and enthusiasts<br> to delve into specific areas of interest.
+<br>
+<br>We are committed to making our resources accessible to all. Our digitized materials are compatible with screen readers<br>and other assistive technologies, ensuring that people with print disabilities can access our collection.
+<br>Archive Nexus encourages public participation in the preservation of knowledge. Registered users can contribute to our<br>collections by uploading their own historical documents, photographs, and recordings, subject to our curation process.
+<br>
+<br>We value the privacy of our users and employ robust security measures to protect their information. All interactions with our site<br>are encrypted, and we do not store unnecessary personal data.
+Archive Nexus is a non-profit organization funded through donations, grants,<br>and partnerships. We are dedicated to the idea that access to knowledge is a fundamental right, and we strive to make the echoes of history<br>available to all who seek them.
+Join us in our mission to preserve the past and inspire the future.<br>Explore, learn, and contribute to Archive Nexus – where history comes alive in the digital age.
+
+    </p>
+    </div>
+    </div>
             <main>
                 <section class="intro">
                     <p>Welcome to Archive Nexus, a digital archive dedicated to preserving
@@ -29,12 +57,14 @@
                     <br>texts, manuscripts, and forgotten knowledge—bringing rare, historical,
                     <br>and academic resources to scholars, students, and curious minds alike.</p>
                 </section>
-
             </main>
+
+
+
             <img class="star" src="black star.png" />
             <div class="title">ARCHIVE NEXUS</div>
         </div>
         
-        <script src="" async defer></script>
+        <script src="pop.js"></script>
     </body>
 </html>
