@@ -1,5 +1,6 @@
 *{
     pointer-events: auto;
+    scroll-behavior: smooth;
     
 }
 
@@ -40,14 +41,15 @@ p{
 }     
 
 .title{
+    width: 100vw;
     position: fixed;
     pointer-events: none;
     font-family: DotGothic16;
     text-transform: uppercase;
     word-wrap: normal;
     font-weight: 400;
-    font-size: 12rem;
-    left: -2%;
+    font-size: 13rem;
+    left: 4rem;
     top: 450px;
     color: black;
 }
@@ -101,9 +103,10 @@ h3{
     font-family: DotGothic16;
     padding-top: 10px;
 }
-/* Full-screen modal */
+
+
 .modal {
-    display: none; /* Hidden by default */
+    display: none; /* hidden by default */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -116,13 +119,13 @@ h3{
     transition: opacity 0.4s ease-in-out;
 }
 
-/* Active modal - fades in smoothly */
+/* active modal - fades in */
 .modal.show {
     display: flex;
     opacity: 1;
 }
 
-/* Fullscreen modal content */
+
 .modal-content {
     background: #DFAAAE;
     width: 100vw; 
@@ -131,7 +134,7 @@ h3{
     max-height: none; 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content:flex-start;
     /* align-items: center; */
     font-family: Georgia; 
     font-size: 16px;
@@ -139,21 +142,20 @@ h3{
     color: black;
     padding: 40px;
     position: relative;
-    transform: translateY(-50px); /* Start slightly above */
+    transform: translateY(-50px); /* thoda upar */
     transition: transform 0.4s ease-in-out;
 }
-
-/* When modal is shown, smoothly slide in */
+/* slide in for modal */
 .modal.show .modal-content {
     transform: translateY(0);
 }
 
-/* Close button - Move it lower */
+
 .close-btn {
     position: absolute;
-    top: 40px;  /* Adjusted lower */
-    right: 20px; /* Keep it aligned to the right */
-    font-size: 35px; /* Slightly bigger for better visibility */
+    top: 40px;  
+    right: 20px; /* aligned to right */
+    font-size: 35px; /* size */
     cursor: pointer;
     color: #000000;
     padding: 5px 10px;
@@ -184,4 +186,119 @@ h3{
   .squiggle:hover::before {
     opacity: 1;
   }
-  
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .title {
+        font-size: 8rem;
+        left: 2rem;
+        top: 400px;
+    }
+
+    .navbar {
+        padding: 0 40px;
+    }
+
+    .nav-left {
+        gap: 40px;
+    }
+
+    .nav-item {
+        font-size: 18px;
+    }
+
+    .intro {
+        font-size: 14px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .modal-content {
+        font-size: 14px;
+        padding: 30px;
+    }
+
+    .close-btn {
+        font-size: 30px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .title {
+        font-size: 5rem;
+        left: 1rem;
+        top: 300px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-left, .nav-right {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .nav-item {
+        font-size: 16px;
+    }
+
+    .intro {
+        font-size: 14px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .modal-content {
+        font-size: 12px;
+        padding: 20px;
+    }
+
+    .close-btn {
+        font-size: 25px;
+    }
+
+    .star {
+        width: 70px;
+        height: 70px;
+        right: 10px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 4rem;
+        left: 0.5rem;
+        top: 250px;
+        text-align: center;
+    }
+
+    .intro {
+        font-size: 12px;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+
+    .modal-content {
+        font-size: 10px;
+        padding: 15px;
+    }
+
+    .close-btn {
+        font-size: 20px;
+    }
+}
