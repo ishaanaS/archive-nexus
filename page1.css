@@ -52,7 +52,7 @@ a:active {
 .home-button{
     text-align:left;
     width: 133px; 
-    left: 34px;
+    left: 40px;
     top: -56px;
     height: 48px; 
     color: #DFAAAE; 
@@ -299,7 +299,7 @@ footer {
     
 } */
 .b-container{
-     left: 55px; 
+     left: 70px; 
      top: 1073px; 
      position: absolute; 
      display: flex; 
@@ -328,7 +328,7 @@ footer {
 .text-info{
     width: 260px; 
     height: 100px; 
-    left: 27px; 
+    left: 38px; 
     top: 820px; 
     position: absolute; 
     color: black; 
@@ -343,7 +343,7 @@ ul{
 .table-contents{
      width: 250px; 
      height: 238px; 
-     left: 29px; 
+     left: 40px; 
      top: 370px; 
      position: absolute; 
      color: black; 
@@ -356,7 +356,7 @@ ul{
 h2{
     width: 260px; 
     height: 238px; 
-    left: 52px; 
+    left: 65px; 
     top: 320px; 
     position: absolute; 
     color: black; 
@@ -368,7 +368,7 @@ h2{
     padding-top: 30px; 
     padding-bottom: 0px; 
     padding-left: 19px; 
-    left: 55px; 
+    left: 68px; 
     top: 1165px; 
     position: absolute; 
     border-radius: 7px; 
@@ -402,7 +402,7 @@ h2{
 .related-text{
      width: 280px; 
      height: 58px; 
-     left: 60px; 
+     left: 68px; 
      top: 1649px; 
      position: absolute; 
      color: black; 
@@ -416,7 +416,7 @@ h2{
     flex-direction: column;
     gap: 20px; /*space b/w row */
     position: absolute;
-    left: 60px; 
+    left: 68px; 
     top: 1706px; 
 }
 
