@@ -457,18 +457,78 @@ h2{
     top: 2630px; 
     position: absolute;
 } */
-/* Apply hover effect to <rect> elements */
+
 rect:hover {
-    fill: #DFAAAE; /* Change to your desired color */
-    stroke: 1px #000; /* Optional: Change stroke color */
-    transition: fill 0.3s ease, stroke 0.3s ease; /* Smooth transition */
+    fill: #DFAAAE; 
+    stroke: 1px #000; 
+    transition: fill 0.3s ease, stroke 0.3s ease; 
     cursor: pointer;
   }
   
-  /* Apply hover effect to SVG containers (if needed) */
+ 
   [data-svg-wrapper]:hover {
-    fill: #DFAAAE; /* Change to your desired color */
-    stroke: 1px #000; /* Optional: Change stroke color */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    fill: #DFAAAE; 
+    stroke: 1px #000; 
+    transition: background-color 0.3s ease; 
     cursor: pointer;
   }
+
+ 
+.home-box {
+    position: relative; 
+    display: inline-block;
+  }
+  
+  
+.home-button {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #DFAAAE;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+  }
+  
+.home-button:hover {
+    font-style: italic; 
+  }
+  
+ 
+.arrow {
+    font-size: 12px;
+  }
+  
+ 
+.dropdown-menu {
+    font-family: Georgia, serif;
+    display: none; 
+    position: absolute;
+    top: -22px; 
+    left: 40px;
+    background-color: #f9f9f9; 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+    border-radius: 7px;
+  }
+  
+  
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px; 
+    display: block; /* stacking */
+  }
+  
+.dropdown-menu a:hover {
+    background-color: #DFAAAE; 
+    border-radius: 7px;
+  }
+  
+  
+.home-box:hover .dropdown-menu {
+    display: block; 
+    border-radius: 7px;
+  }
+  

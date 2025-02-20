@@ -127,15 +127,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.home{
-    font-family: Georgia;
-    color: #DFAAAE; 
-    font-size: 20px;
-    font-weight: 400; 
-}
-.home:hover{
-    font-style: italic;
-}
+
 .line-1{
     width: 100vw; 
     height: 0px; 
@@ -282,6 +274,61 @@ footer {
     height: 300px; 
     border-radius: 7px;
   }
-
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Home Button with Arrow */
+.home {
+    font-family: Georgia;
+    color: #DFAAAE; 
+    font-size: 20px;
+    font-weight: 400; 
+    cursor: pointer;
+  }
+.home:hover{
+    font-style: italic;
+}
+  
+.home .arrow {
+    font-size: 12px;
+    margin-left: 5px;
+}
+  
+ 
+.dropdown-menu {
+    display: none; 
+    font-family: Georgia;
+    position: absolute;
+    top: 100%; /* below home */
+    left: 0;
+    background-color: #f9f9f9; 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+    border-radius: 7px;
+    z-index: 1;
+}
+  
+  /* Dropdown Menu Links */
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px; 
+    display: block; 
+}
+  
+.dropdown-menu a:hover {
+    background-color: #DFAAAE; 
+    border-radius: 7px;
+}
+  
+  /* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block; 
+    border-radius: 7px;
+}
+  
 
   
