@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+/* Parent container for collections section */
+.collections {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns all child elements (h1 and .intro) to the right */
+    padding-right: 18rem; /* Adds spacing from the right edge */
+  }
+  
+  /* Styling for the h1 element */
+  .collections h1 {
+    text-align: left;
+    width: auto; /* Allow the width to adjust dynamically */
+    text-align: right; /* Aligns text inside the h1 to the right */
+    color: black;
+    font-size: 60px;
+    font-family: DotGothic16, sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px; /* Adds spacing below the heading */
+  }
+  
+  /* Styling for the intro paragraph */
+  .collections .intro {
+    width: auto; /* Allow dynamic width adjustment */
+    color: black;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    text-align: left; /* Aligns text inside the paragraph to the right */
+  }
+  
+/* h1{
+    width: 399px; 
+    height: 81px; 
+    left: 4rem;
+    text-align: right; 
+    align-items: end;
+    color: black; 
+    font-size: 60px; 
+    font-family: DotGothic16; 
+    font-weight: 400; 
+   
+}
+.intro {
+    
+    margin: 20px;
+    width: 399px; 
+    height: 64px; 
+    color: black; 
+    font-size: 12px; 
+    font-family: Georgia; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin: 20px;
+    padding-right: 20px;
+    
+} */
+
+.top-bar {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    background-color: white;
+}
+.nav-container {
+    /* border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+    padding: 10px 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home{
+    font-family: Georgia;
+    color: #DFAAAE; 
+    font-size: 20px;
+    font-weight: 400; 
+}
+.line-1{
+    width: 100vw; 
+    height: 0px; 
+    left: 0px; 
+    top: 87px; 
+    position: absolute; 
+    border: 1px black solid;
+   
+}
+.line-2{
+    width: 100vw; 
+    height: 0px; 
+    left: 0px; 
+    top: 112px; 
+    position: absolute; 
+    border: 1px black solid;
+    
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.image img {
+    border: 0.5px black solid;
+    border-radius: 7px;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    
+}
+.wide {
+    grid-column: span 2;
+    max-height:  400px;
+    object-fit: contain;
+}
+.text {
+    background: white;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    border-radius: 7px;
+    border: 0.5px black solid;
+    font-family: Georgia;
+}
+footer {
+    background: #DFAAAE; 
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Georgia;
+}
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+.star {
+    font-size: 24px;
+}
