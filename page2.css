@@ -280,7 +280,7 @@ footer {
     display: inline-block;
   }
   
-  /* Home Button with Arrow */
+  
 .home {
     font-family: Georgia;
     color: #DFAAAE; 
@@ -294,7 +294,8 @@ footer {
   
 .home .arrow {
     font-size: 12px;
-    margin-left: 5px;
+    margin-left: 2px;
+    margin-bottom: 10px;
 }
   
  
@@ -311,7 +312,7 @@ footer {
     z-index: 1;
 }
   
-  /* Dropdown Menu Links */
+ 
 .dropdown-menu a {
     color: black;
     text-decoration: none;
@@ -324,7 +325,7 @@ footer {
     border-radius: 7px;
 }
   
-  /* Show Dropdown on Hover */
+ 
 .dropdown:hover .dropdown-menu {
     display: block; 
     border-radius: 7px;
