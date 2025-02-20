@@ -9,6 +9,9 @@ html, body {
     scroll-behavior: smooth;
     
 }
+a:link{
+    color: #DFAAAE; 
+}
 a{
     text-decoration: none;
 }
@@ -50,7 +53,7 @@ a:active {
     text-align:left;
     width: 133px; 
     left: 34px;
-    top: -45px;
+    top: -56px;
     height: 48px; 
     color: #DFAAAE; 
     font-size: 20px; 
@@ -64,33 +67,11 @@ a:active {
     max-width: 100%
     
 }
-.squiggle {
-    position: relative;
-    display: inline-block; /* defined boundary ke liye */
-  }
-  
-.squiggle::before {
-    content: '';
-    position: absolute;
-    bottom: -5px; /* Aligns just below the text */
-    left: 0; /* Aligns with the left edge of the button */
-    width: 100%; /* Matches the width of the button */
-    height: 10px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M52,3 L57,30 L92,30 L65,48 L79,79 L50,55 L25,80 L37,50 L10,30 L40,30 Z' fill='none' stroke='black' stroke-width='0.5'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    pointer-events: none; /* for button clicks */
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1000;
-  }
-  
-.squiggle:hover::before {
-    opacity: 1;
-    
+
    
-  }
+.home-button:hover{
+    font-style: italic;
+}
 /* .line-1{
     width: 1460px;
     height: 0px; 
@@ -183,52 +164,7 @@ a:active {
 }
 
 
-/* .footer {
-    position: absolute; 
-    bottom: 0;
-    left: -30px;
-    width: 100vw; 
-    height: 73px; /* to match svg 
-}*/
-
-
-/* .footer svg {
-    display:block; /* extra space ko hatata by inline SVGs 
-}*/
-
-
-/* .footer-content{
-    left: 60px; 
-    top: 2652px; 
-    position: absolute; 
-    justify-content: flex-start; 
-    align-items: center; 
-    display: inline-flex;
-}  */
-
-/* .footer-info {
-    position: absolute;
-    bottom: -5px; 
-    left: -30px;
-    top: 2640px;
-    width: 100vw; 
-    height: 73px; 
-    display: flex; 
-    justify-content: space-around; 
-    align-items: center; 
-} */
-
-
-/* .footer-item {
-    color: black;
-    font-size: 20px;
-    font-family: Georgia, serif;
-    font-weight: 400;
-    text-align: center;
-} */
-
-
-
+/* 
 .footer {
     width: 100%; 
     background-color: #DFAAAE; 
@@ -240,10 +176,10 @@ a:active {
 
 .footer-content {
     display: flex;
-    justify-content: space-around; /* even spacing */
+    justify-content: space-around;
     align-items: center;
     max-width: 1200px; 
-    margin: auto; /* centers???? */
+    margin: auto; 
     flex-wrap: wrap; 
 }
 
@@ -255,6 +191,31 @@ a:active {
     font-weight: 400;
     text-align: center;
     padding: 10px;
+} */
+
+footer {
+    z-index: 1000;
+    background: #DFAAAE; 
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Georgia;
+}
+.footer-links a {
+    z-index: 1000;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    padding-left: 48px;
+    font-size: 20px;
+}
+.footer-links a:hover{
+    font-style: italic;
+}
+.star {
+    font-size: 35px;
 }
 
 /* Responsive adjustments */
@@ -488,11 +449,26 @@ h2{
     cursor: pointer;
 }
 
-.star{
+/* .star{
     width: 94px; 
     height: 94px; 
     right: 2%;
-    /* left: 815px;  */
+   
     top: 2630px; 
     position: absolute;
-}
+} */
+/* Apply hover effect to <rect> elements */
+rect:hover {
+    fill: #DFAAAE; /* Change to your desired color */
+    stroke: 1px #000; /* Optional: Change stroke color */
+    transition: fill 0.3s ease, stroke 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+  }
+  
+  /* Apply hover effect to SVG containers (if needed) */
+  [data-svg-wrapper]:hover {
+    fill: #DFAAAE; /* Change to your desired color */
+    stroke: 1px #000; /* Optional: Change stroke color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+  }

@@ -186,6 +186,20 @@ h3{
   .squiggle:hover::before {
     opacity: 1;
   }
+
+
+  footer {
+    
+   
+    padding-left: 1000px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+.star {
+    font-size: 35px;
+}
+
 /* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
     .title {
