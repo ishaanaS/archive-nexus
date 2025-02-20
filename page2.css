@@ -32,21 +32,24 @@ body {
     align-items: flex-end; 
     padding-right: 17rem; 
     text-align: left;
+    
   }
   
 
   .collections h1 {
-    
-    text-align: left;
-    width: auto; 
-   
+    text-align: center;
+    width: auto;
     color: black;
-    font-size: 60px;
-    font-family: DotGothic16, sans-serif;
-    font-weight: 400;
-    margin-bottom: 10px; 
-    
-  }
+    font-size: 120px;
+    font-family: oddity-script, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: -10px;
+    margin-top: 0;  /* Removes any default top margin */
+    padding-top: 0; /* Removes padding */
+    position: relative; /* Removes the large space caused by top positioning */
+}
+
  
   .collections .intro {
     width: auto;
@@ -55,6 +58,7 @@ body {
     font-family: Georgia, serif;
     font-weight: 400;
     text-align: left; 
+    margin-top: 20px; 
   }
   
 /* h1{
@@ -332,4 +336,114 @@ footer {
 }
   
 
-  
+/* Responsive Design Updates */
+
+/* Default styles for larger screens are already set */
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+    .collections {
+        padding-right: 5rem;
+        padding-top: 2rem; /* Lowering the collections section */
+        align-items: center;
+        text-align: center;
+    }
+    .collections h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+    .collections .intro {
+        font-size: 14px;
+        text-align: center;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .horizontal-scroll .wide img {
+        height: 250px;
+    }
+    .nav-container {
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center; /* Centering Home button */
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Mobile View (Up to 767px) */
+@media (max-width: 767px) {
+    .collections {
+        padding-right: 2rem;
+        padding-top: 2rem; /* Lowering the collections section */
+        align-items: center;
+        text-align: center;
+    }
+    .collections h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+    .collections .intro {
+        font-size: 12px;
+        text-align: center;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .image img {
+        height: auto;
+    }
+    .horizontal-scroll {
+        padding: 10px;
+    }
+    .horizontal-scroll .wide img {
+        height: 200px;
+    }
+    .footer-links a {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+    .star {
+        font-size: 25px;
+    }
+    .nav-container {
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center; /* Centering Home button */
+        align-items: center;
+        text-align: center;
+    }
+    .dropdown-menu {
+        position: relative;
+        width: 100%;
+    }
+    .top-bar {
+        font-size: 12px;
+    }
+}
+
+/* Additional fixes for small screens */
+@media (max-width: 480px) {
+    .collections {
+        padding-top: 2rem; /* Lowering the collections section */
+    }
+    .collections h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .collections .intro {
+        font-size: 10px;
+        text-align: center;
+    }
+    .footer-links {
+        flex-direction: column;
+    }
+    .star {
+        font-size: 20px;
+    }
+    .nav-container {
+        justify-content: center; /* Centering Home button */
+        align-items: center;
+        text-align: center;
+    }
+}

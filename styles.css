@@ -35,22 +35,24 @@ p{
     pointer-events: none;
     width: 95px;
     height: 95px;
-    bottom: 0%; 
-    right: 0%;
-    object-fit: contain;
+    bottom: -63px;
+    left: 1420px;
+   
 }     
 
 .title{
     width: 100vw;
     position: fixed;
     pointer-events: none;
-    font-family: DotGothic16;
-    text-transform: uppercase;
+    font-family: oddity-script, sans-serif;
+font-weight: 300;
+font-style: normal;
+    /* text-transform: uppercase; */
     word-wrap: normal;
     font-weight: 400;
-    font-size: 13rem;
+    font-size: 17rem;
     left: 4rem;
-    top: 450px;
+    top: 350px;
     color: black;
 }
 .navbar {
