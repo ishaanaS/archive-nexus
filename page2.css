@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-   
     
 }
 
@@ -31,7 +30,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end; 
-    padding-right: 18rem; 
+    padding-right: 17rem; 
+    text-align: left;
   }
   
 
@@ -39,7 +39,7 @@ body {
     
     text-align: left;
     width: auto; 
-    text-align: right; 
+   
     color: black;
     font-size: 60px;
     font-family: DotGothic16, sans-serif;
@@ -232,6 +232,7 @@ body {
   
 footer {
     background: #DFAAAE; 
+    max-width: 100%;
     text-align: center;
     padding: 10px;
     display: flex;
