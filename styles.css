@@ -259,7 +259,7 @@ h3{
 @media (max-width: 768px) {
     .title {
         font-size: 6rem;
-        left: 1rem;
+        left: 60px;
         top: 200px;
         text-align: center;
     }
@@ -310,6 +310,7 @@ h3{
 
     .intro {
         font-size: 12px;
+        left: 2rem;
         padding: 15px;
         text-align: center;
     }

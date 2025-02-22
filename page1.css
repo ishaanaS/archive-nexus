@@ -697,12 +697,28 @@ rect:hover {
       right: 0;
       top: 220px;
     }
+    .collections-box{
+      position: absolute;
+      width: 80%;
+      padding: 15px;
+      margin-top: 20px;
+      left: 8rem;
+     
+    }
+    .c-title{
+        font-size: 14px;
+        left: 8rem;
+    }
   
     .content {
       font-size: 16px;
     }
+    .related-text{
+       font-size: 20px;
+
+    }
   
-    .table-contents, .text-info, .collections-box, .related-text, .related-text-section {
+    .table-contents, .text-info, .related-text-section {
       position: static;
       width: 100%;
       padding: 15px;
