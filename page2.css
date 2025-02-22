@@ -23,6 +23,11 @@ body {
     background-color: white;
 }
 
+h2:hover{
+ font-style: italic;
+}
+
+
 .collections {
     display: flex;
     flex-direction: column;

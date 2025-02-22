@@ -499,7 +499,7 @@ rect:hover {
   }
   
  
-.arrow {
+/* .arrow {
     font-size: 12px;
   }
   
@@ -522,7 +522,7 @@ rect:hover {
     color: black;
     text-decoration: none;
     padding: 12px 16px; 
-    display: block; /* stacking */
+    display: block; 
   }
   
 .dropdown-menu a:hover {
@@ -534,7 +534,7 @@ rect:hover {
 .home-box:hover .dropdown-menu {
     display: block; 
     border-radius: 7px;
-  }
+  } */
 
   @media (min-width: 1200px) {
     .title-container {
