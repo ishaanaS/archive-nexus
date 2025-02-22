@@ -1,6 +1,6 @@
 
 document.getElementById("save-button").addEventListener("click", function () {
-    // content of the webpage
+    // content of webpage
     const content = `
 The Cinematic "Dream Life" of American Politics
 

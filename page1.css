@@ -535,4 +535,224 @@ rect:hover {
     display: block; 
     border-radius: 7px;
   }
+
+  @media (min-width: 1200px) {
+    .title-container {
+      left: 75%;
+      width: 900px;
+    }
+  
+    .content-box {
+      width: 700px;
+      right: -40%;
+    }
+  
+    .author {
+      right: 30vw;
+    }
+  
+    .table-contents, .text-info, .collections-box, .related-text, .related-text-section {
+      left: 5%;
+    }
+  }
+  
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .spine, .spine-shadow {
+        display: none;
+    }
+
+    .table-contents, h2 {
+        display: none;
+      }
+
+    .title-container {
+        left: 0;
+        top: 140px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .title {
+        width: 100%;
+        font-size: 22px;
+        padding-left: 17px;
+        
+    }
+
+    .author {
+        right: auto;
+        left: 45px;
+        top: 240px;
+        font-size: 16px;
+    }
+
+    .content-box {
+        width: 100%;
+        padding: 20px;
+        right: 0;
+        top: 280px;
+       
+    }
+    .content {
+        font-size: 14px;
+        padding-left: 1.5rem;
+        
+    }
+    .text-info{
+        position: absolute;
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+        top: 70rem;
+        font-size: 12px;
+        left: 15px;
+
+    }
+
+    .table-contents, .collections-box, .related-text, .related-text-section {
+        position: static;
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .b-container {
+        left: 75px;
+        top: 85rem;
+        bottom: 20px;
+        
+    }
+    .b-content{
+        font-size: 12px;
+    }
+
+    .home-nav-all {
+        left: 20px;
+        top: 20px;
+    }
+
+    .related-text-box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image-container {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        padding-left: 0;
+        margin: 0 5px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    .spine, .spine-shadow {
+      display: none;
+    }
+
+    .table-contents, h2 {
+        display: none;
+      }
+  
+    .title-container {
+      left: 0;
+      top: 60px;
+      width: 100%;
+      padding: 0 15px;
+    }
+  
+    .title {
+      width: 100%;
+      font-size: 24px;
+      padding-left: 0;
+    }
+  
+    .author {
+      right: auto;
+      left: 15px;
+      top: 160px;
+      font-size: 18px;
+    }
+  
+    .content-box {
+      width: 100%;
+      padding: 15px;
+      right: 0;
+      top: 220px;
+    }
+  
+    .content {
+      font-size: 16px;
+    }
+  
+    .table-contents, .text-info, .collections-box, .related-text, .related-text-section {
+      position: static;
+      width: 100%;
+      padding: 15px;
+      margin-top: 20px;
+      left: 0;
+    }
+  
+    .b-container {
+      left: 15px;
+      top: 30vh;
+      bottom: 15px;
+    }
+    .b-content{
+        top: 30vh;
+    }
+  
+    .home-nav-all {
+      left: 15px;
+      top: 15px;
+    }
+  
+    .related-text-box {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .image-container {
+      width: 120px;
+      height: 170px;
+      margin-bottom: 15px;
+    }
+  
+    .image-container img {
+      width: 120px;
+      height: 170px;
+    }
+  
+    footer {
+      flex-direction: column;
+      padding: 15px;
+    }
+  
+    .footer-links {
+      margin-bottom: 10px;
+    }
+  
+    .footer-links a {
+      padding-left: 0;
+      margin: 0 10px;
+      font-size: 16px;
+    }
+  }
   

@@ -1,22 +1,19 @@
 *{
     box-sizing: border-box;
-    
 }
 
 a{
     text-decoration: none;
 }
-a:visited {
-    color: #DFAAAE; 
-  }
-
-a:active {
-    color: black; 
-  }
-
 a:link{
     color: #DFAAAE; 
 }
+a:active {
+    color: black; 
+  }
+a:visited {
+    color: #DFAAAE; 
+  }
 
 
 body {
@@ -336,11 +333,7 @@ footer {
 }
   
 
-/* Responsive Design Updates */
 
-/* Default styles for larger screens are already set */
-
-/* Tablet View (768px - 1024px) */
 @media (max-width: 1024px) {
     .collections {
         padding-right: 5rem;
@@ -430,13 +423,14 @@ footer {
     .collections h1 {
         font-size: 30px;
         text-align: center;
+        margin-left: 10px;
     }
     .collections .intro {
         font-size: 10px;
         text-align: center;
     }
     .footer-links {
-        flex-direction: column;
+        flex-direction: row;
     }
     .star {
         font-size: 20px;

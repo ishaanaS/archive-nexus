@@ -206,72 +206,82 @@ h3{
     font-size: 35px;
 }
 
+/* Reset Responsive Design Updates */
+
 /* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
     .title {
-        font-size: 8rem;
+        font-size: 10rem;
         left: 2rem;
-        top: 400px;
+        top: 300px;
+        text-align: center;
     }
 
     .navbar {
-        padding: 0 40px;
-    }
-
-    .nav-left {
-        gap: 40px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .nav-item {
         font-size: 18px;
+        text-align: center;
     }
 
     .intro {
-        font-size: 14px;
-        padding-left: 40px;
-        padding-right: 40px;
+        font-size: 16px;
+        padding: 40px;
+        text-align: center;
     }
 
     .modal-content {
         font-size: 14px;
-        padding: 30px;
+        padding: 20px;
     }
 
-    .close-btn {
-        font-size: 30px;
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
     }
 }
 
-/* Mobile (max-width: 768px) */
+
 @media (max-width: 768px) {
     .title {
-        font-size: 5rem;
+        font-size: 6rem;
         left: 1rem;
-        top: 300px;
+        top: 200px;
+        text-align: center;
     }
 
     .navbar {
         flex-direction: column;
         align-items: center;
-        height: auto;
+        justify-content: center;
         padding: 10px;
-    }
-
-    .nav-left, .nav-right {
-        flex-direction: column;
-        gap: 20px;
         text-align: center;
     }
 
     .nav-item {
         font-size: 16px;
+        margin: 10px 0;
+        text-align: center;
     }
 
     .intro {
         font-size: 14px;
+        padding: 20px;
         text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .modal-content {
@@ -279,38 +289,42 @@ h3{
         padding: 20px;
     }
 
-    .close-btn {
-        font-size: 25px;
+    img {
+        width: 100%;
     }
 
-    .star {
-        width: 70px;
-        height: 70px;
-        right: 10px;
+    footer {
+        flex-direction: column;
+        text-align: center;
     }
 }
 
-/* Small Mobile (max-width: 480px) */
+
 @media (max-width: 480px) {
     .title {
         font-size: 4rem;
         left: 0.5rem;
-        top: 250px;
+        top: 150px;
         text-align: center;
     }
 
     .intro {
         font-size: 12px;
         padding: 15px;
-        text-align: left;
+        text-align: center;
     }
 
     .navbar {
         padding: 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .nav-item {
         font-size: 14px;
+        text-align: center;
     }
 
     .modal-content {
@@ -318,7 +332,13 @@ h3{
         padding: 15px;
     }
 
-    .close-btn {
-        font-size: 20px;
+    img {
+        max-width: 480px;
+
+    }
+
+    footer {
+        padding: 10px;
+        text-align: center;
     }
 }
