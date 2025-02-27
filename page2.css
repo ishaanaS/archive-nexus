@@ -47,9 +47,9 @@ h2:hover{
     font-weight: 300;
     font-style: normal;
     margin-bottom: -10px;
-    margin-top: 0;  /* Removes any default top margin */
-    padding-top: 0; /* Removes padding */
-    position: relative; /* Removes the large space caused by top positioning */
+    margin-top: 0;  
+    padding-top: 0; 
+    position: relative; 
 }
 
  
@@ -108,7 +108,7 @@ h2:hover{
     animation: marquee 70s linear infinite; 
 }
 
-/* Marquee Animation */
+/* animation */
 @keyframes marquee {
     0% {
         transform: translateX(0%); 
@@ -280,7 +280,7 @@ footer {
     height: 300px; 
     border-radius: 7px;
   }
-/* Dropdown Container */
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -305,21 +305,21 @@ footer {
 }
   
  
-.dropdown-menu {
+/* .dropdown-menu {
     display: none; 
     font-family: Georgia;
     position: absolute;
-    top: 100%; /* below home */
+    top: 100%; 
     left: 0;
     background-color: #f9f9f9; 
     min-width: 160px; 
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
     border-radius: 7px;
     z-index: 1;
-}
+} */
   
  
-.dropdown-menu a {
+/* .dropdown-menu a {
     color: black;
     text-decoration: none;
     padding: 12px 16px; 
@@ -336,13 +336,13 @@ footer {
     display: block; 
     border-radius: 7px;
 }
-  
+   */
 
 
 @media (max-width: 1024px) {
     .collections {
         padding-right: 5rem;
-        padding-top: 2rem; /* Lowering the collections section */
+        padding-top: 2rem; 
         align-items: center;
         text-align: center;
     }
@@ -363,17 +363,17 @@ footer {
     .nav-container {
         padding: 40px 20px;
         display: flex;
-        justify-content: center; /* Centering Home button */
+        justify-content: center; 
         align-items: center;
         text-align: center;
     }
 }
 
-/* Mobile View (Up to 767px) */
+
 @media (max-width: 767px) {
     .collections {
         padding-right: 2rem;
-        padding-top: 2rem; /* Lowering the collections section */
+        padding-top: 2rem; 
         align-items: center;
         text-align: center;
     }
@@ -407,7 +407,7 @@ footer {
     .nav-container {
         flex-direction: column;
         padding: 20px;
-        justify-content: center; /* Centering Home button */
+        justify-content: center; 
         align-items: center;
         text-align: center;
     }
@@ -420,10 +420,10 @@ footer {
     }
 }
 
-/* Additional fixes for small screens */
+
 @media (max-width: 480px) {
     .collections {
-        padding-top: 2rem; /* Lowering the collections section */
+        padding-top: 2rem; 
     }
     .collections h1 {
         font-size: 30px;
@@ -441,7 +441,7 @@ footer {
         font-size: 20px;
     }
     .nav-container {
-        justify-content: center; /* Centering Home button */
+        justify-content: center; 
         align-items: center;
         text-align: center;
     }

@@ -210,9 +210,6 @@ h3{
     font-size: 35px;
 }
 
-/* Reset Responsive Design Updates */
-
-/* Tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
     .title {
         font-size: 10rem;

@@ -60,38 +60,3 @@ personal anger rather than an action fundamental to participatory, democratic po
     URL.revokeObjectURL(link.href);
 });
 
-// Get references to the left and right sides
-const leftSide = document.getElementById('left-side');
-const rightSide = document.getElementById('right-side');
-
-// Function to enable scrolling on hover
-function enableScroll(element) {
-    element.style.overflowY = 'auto'; // Enable scrolling
-}
-
-// Function to disable scrolling when not hovering
-function disableScroll(element) {
-    element.style.overflowY = 'hidden'; // Disable scrolling
-}
-
-// Add event listeners for the left side
-leftSide.addEventListener('mouseenter', () => {
-    enableScroll(leftSide);
-    disableScroll(rightSide);
-});
-
-leftSide.addEventListener('mouseleave', () => {
-    disableScroll(leftSide);
-    enableScroll(rightSide);
-});
-
-// Add event listeners for the right side
-rightSide.addEventListener('mouseenter', () => {
-    enableScroll(rightSide);
-    disableScroll(leftSide);
-});
-
-rightSide.addEventListener('mouseleave', () => {
-    disableScroll(rightSide);
-    enableScroll(leftSide);
-});
